@@ -70,7 +70,7 @@ test('invoke lamda with SQS Event',  async() => {
       messageAttributes: {},
       md5OfBody: "033bd94b1168d7e4f0d644c3c95e35bf",
       eventSource: "aws:sqs",
-      eventSourceARN: "arn:aws:sqs:eu-west-2:490261199806:mytestQueue",
+      eventSourceARN: process.env['AWS_QUEUE_ARN'],
       awsRegion: "eu-west-2"
     }
   ]
